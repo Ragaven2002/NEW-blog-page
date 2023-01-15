@@ -1,0 +1,299 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+ 
+}
+body{
+    background-color: black;
+}
+.top{
+    background-image: url(./pexels-toni-cuenca-585752.jpg);  
+    background-size:cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.nav{
+    
+    height: 230px;
+}
+
+ul li{
+    color: white;
+    display: inline;
+    float: right;
+    padding: 12px;
+
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+.photo{
+     height: 450px;
+     float:right;
+     margin: 19px;
+     margin-right: 20%;
+}
+.head-content{
+    color:white;
+    height: 120vh;
+    font-size: 40px;
+  
+
+    
+}
+.head-content h1{
+    margin-left: 30%;
+    margin-top: 10%;
+   
+    
+}
+.head-content header{
+    margin-left: 30%;
+}
+.head-content h1,header{
+    -webkit-animation: FadeinLeft 2.2s both;
+    -moz-animation: FadeinLeft 2.2s both;
+    -o-animation: FadeinLeft 2.2s both;
+    animation: FadeinLeft 2.2s both;
+}
+@-webkit-keyframes FadeinLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform : translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes FadeinLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform : translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-o-keyframes FadeinLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform : translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes FadeinLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform : translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+   
+.head p{
+    color: white;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+}
+.about{
+    flex: 1;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.about-photo{
+    flex: 1;
+    
+}
+@media screen and (max-width:800px) {
+    .head{
+        flex-direction: column;
+    }
+    .about-photo{
+        margin-left: 12px;
+    }
+}
+.wel{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}
+.name{
+    margin-left: 60%;
+    font-size: 25px;
+    color:brown;
+    font-family: cursive;
+}
+.head{
+    position: relative;
+    opacity: 0;
+    background-color: black;
+    box-shadow: 19px ;
+    box-shadow: inset;
+    
+}
+.head.active{
+    opacity: 1;
+}
+.address{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.address1{
+    flex: 2;
+    margin-left: 19px;
+    
+
+}
+.address2{
+    flex: 1;
+   padding-left: 10%;
+   
+    margin-top: 3%;
+}
+.heading{
+    margin-top: 30px;
+    font-size: 22px;
+    color: darkgray;
+}
+.portbolio{
+    margin-top: 90px;
+    color: white;
+    margin-left: 35px;
+    
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.l1{
+    padding-left: 16px;
+}
+.l2{
+    font-size: 18px;
+    color: crimson
+}
+
+.a{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border: 3px solid crimson;
+    border-radius: 4px;
+    box-shadow: 10px 10px lightgray;
+    margin-left: 100px;
+    
+}
+.b1,.b2,.b3,.b4{
+    flex: 3;
+    background-color: aqua;
+}
+.b1{
+    background-image: url(Screenshot\ \(112\).png);
+    background-size: cover;
+    background-position: center;
+}
+.b2{
+    background-image: url(4.png);
+    background-size: cover;
+   
+}
+.b3{
+    background-image: url(1.png);
+    background-size: cover;
+    background-position: center;
+}
+.b4{
+    background-image: url(Screenshot_4.png);
+    background-size: cover;
+    background-position: center;
+}
+.c{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: lightslategray;
+}
+.d{
+    display: flex;
+    flex-direction: row;
+    margin: 75px;
+    
+}
+.a:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:750px){
+    .a{
+        height: 300px;
+        width: 300px;
+        margin-left: -10%;
+        margin-top: 10%;
+        
+        
+   
+        
+    }
+    .b4,.b3,.b2,.b1:hover{
+        
+       transform: scale(0.8);
+    }
+    .d{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width:480px) {
+    .head,.d{
+        transform: scale(0.7);
+    }
+    .about-photo{
+        margin-right: -17%;
+    }
+    .d{
+        margin-left: 6%;
+       
+    }
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    
+}
+
+.details1{
+    padding-right: 40px;
+}
+#date{
+    color: grey;
+    display: inline;
+}
+.address2 img:hover{
+    transform: scale(1.1);
+}
+
+
