@@ -243,7 +243,7 @@ ul li a{
     margin: 75px;
     
 }
-.a:hover{
+.a :hover{
     transform: scale(1.1);
 }
 @media screen and (max-width:750px){
